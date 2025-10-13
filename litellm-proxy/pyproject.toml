@@ -1,10 +1,9 @@
 [project]
-name = "google-adk-python"
+name = "litellm-proxy"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
-    "google-adk>=1.16.0",
-    "litellm>=1.78.0",
+    "litellm[proxy]>=1.78.0",
 ]
