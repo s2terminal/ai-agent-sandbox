@@ -1,0 +1,5 @@
+{
+  // Dev ContainerにPodmanを使用する設定（通常ユーザースコープで設定するのでここの設定は不要）
+  "dev.containers.dockerPath": "podman",
+  "dev.containers.dockerComposePath": "podman-compose",
+}

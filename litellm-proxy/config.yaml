@@ -3,3 +3,7 @@ model_list:
     litellm_params:
       model: gemini/gemini-2.5-flash
       api_key: "os.environ/GOOGLE_API_KEY"
+
+general_settings:
+  master_key: sk-super-secret-master-key
+  database_url: "postgresql://my_user:my_password@localhost:5432/my_database"
