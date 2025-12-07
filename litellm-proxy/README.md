@@ -4,7 +4,9 @@ https://docs.litellm.ai/docs/proxy/docker_quick_start
 https://docs.litellm.ai/docs/providers/gemini
 
 ```
+$ echo 'GOOGLE_API_KEY=XXXXXXXX' > .env
 $ uv run prisma generate
+
 $ uv run litellm --config ./config.yaml --detailed_debug
 ```
 
