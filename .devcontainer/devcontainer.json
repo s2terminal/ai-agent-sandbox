@@ -9,7 +9,8 @@
     "POSTGRES_DB": "my_database",
     "DATABASE_URL": "postgresql://my_user:my_password@localhost:5432/my_database"
   },
-  "postCreateCommand": "sudo service postgresql start && sleep 2 && sudo su postgres -c \"psql -c \\\"CREATE USER my_user WITH PASSWORD 'my_password';\\\" && psql -c \\\"CREATE DATABASE my_database OWNER my_user;\\\" && psql -c \\\"GRANT ALL PRIVILEGES ON DATABASE my_database TO my_user;\\\"\" && echo 'PostgreSQLが起動しました!'",
+  "postCreateCommand": "sudo service postgresql start && sleep 2 && sudo su postgres -c \"psql -c \\\"CREATE USER my_user WITH PASSWORD 'my_password';\\\" && psql -c \\\"CREATE DATABASE my_database OWNER my_user;\\\" && psql -c \\\"GRANT ALL PRIVILEGES ON DATABASE my_database TO my_user;\\\"\"",
+  "postStartCommand": "sudo service postgresql start && echo 'PostgreSQLが起動しました!'",
   "forwardPorts": [
     5432
   ],
